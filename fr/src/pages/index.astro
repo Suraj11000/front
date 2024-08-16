@@ -1,0 +1,17 @@
+---
+const response = await fetch('https://back-n4mq.vercel.app/');
+const data = await response.json();
+const timestamp = data.timestamp;
+
+
+---
+
+<html>
+  <head>
+    <title>Timestamp with ISR in nodejs</title>
+  </head>
+  <body>
+    <h1>Current Timestamp</h1>
+    <p>{timestamp}</p>
+  </body>
+</html>
